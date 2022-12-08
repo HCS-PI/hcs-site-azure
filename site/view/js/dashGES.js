@@ -333,9 +333,9 @@ const updateGraph = () => {
         resposta.json().then((json) => {
 
           for (let i = 0; i < json.length; i++) {
-            if (json[i].dispositivo % 2 == 0) {
+            if (json[i].fk_dispositivo % 2 == 0) {
               newTemp = (json[i].valor);
-            } else if (json[i].dispositivo % 2 != 0) {
+            } else if (json[i].fk_dispositivo % 2 != 0) {
               newCpu = (json[i].valor);
             } else {
               console.log('Erro no IF Dispositivo')
